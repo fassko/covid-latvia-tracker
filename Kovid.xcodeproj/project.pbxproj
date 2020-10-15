@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63167F272538B8780011EF77 /* KovidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63167F262538B8780011EF77 /* KovidAPI.swift */; };
+		63167F2A2538B87C0011EF77 /* KovidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63167F262538B8780011EF77 /* KovidAPI.swift */; };
+		639D46922537571500D249D8 /* KovidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D46912537571500D249D8 /* KovidApp.swift */; };
+		639D46942537571500D249D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D46932537571500D249D8 /* ContentView.swift */; };
+		639D46962537571700D249D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639D46952537571700D249D8 /* Assets.xcassets */; };
+		639D46992537571700D249D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639D46982537571700D249D8 /* Preview Assets.xcassets */; };
+		639D46A8253758B900D249D8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639D46A7253758B900D249D8 /* WidgetKit.framework */; };
+		639D46AA253758B900D249D8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 639D46A9253758B900D249D8 /* SwiftUI.framework */; };
+		639D46AD253758B900D249D8 /* Kovid_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D46AC253758B900D249D8 /* Kovid_Widget.swift */; };
+		639D46AF253758BA00D249D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639D46AE253758BA00D249D8 /* Assets.xcassets */; };
+		639D46B3253758BA00D249D8 /* Kovid WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 639D46A5253758B900D249D8 /* Kovid WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		639D46B1253758BA00D249D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 639D46862537571500D249D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 639D46A4253758B900D249D8;
+			remoteInfo = "Kovid WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		639D46B7253758BA00D249D8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				639D46B3253758BA00D249D8 /* Kovid WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		63167F262538B8780011EF77 /* KovidAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KovidAPI.swift; sourceTree = "<group>"; };
+		639D468E2537571500D249D8 /* Kovid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kovid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		639D46912537571500D249D8 /* KovidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KovidApp.swift; sourceTree = "<group>"; };
+		639D46932537571500D249D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		639D46952537571700D249D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		639D46982537571700D249D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		639D469A2537571700D249D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		639D46A5253758B900D249D8 /* Kovid WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Kovid WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		639D46A7253758B900D249D8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		639D46A9253758B900D249D8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		639D46AC253758B900D249D8 /* Kovid_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kovid_Widget.swift; sourceTree = "<group>"; };
+		639D46AE253758BA00D249D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		639D46B0253758BA00D249D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		639D468B2537571500D249D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639D46A2253758B900D249D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639D46AA253758B900D249D8 /* SwiftUI.framework in Frameworks */,
+				639D46A8253758B900D249D8 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		639D46852537571500D249D8 = {
+			isa = PBXGroup;
+			children = (
+				639D46902537571500D249D8 /* Kovid */,
+				639D46AB253758B900D249D8 /* Kovid Widget */,
+				639D46A6253758B900D249D8 /* Frameworks */,
+				639D468F2537571500D249D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		639D468F2537571500D249D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				639D468E2537571500D249D8 /* Kovid.app */,
+				639D46A5253758B900D249D8 /* Kovid WidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		639D46902537571500D249D8 /* Kovid */ = {
+			isa = PBXGroup;
+			children = (
+				639D46912537571500D249D8 /* KovidApp.swift */,
+				63167F262538B8780011EF77 /* KovidAPI.swift */,
+				639D46932537571500D249D8 /* ContentView.swift */,
+				639D46952537571700D249D8 /* Assets.xcassets */,
+				639D469A2537571700D249D8 /* Info.plist */,
+				639D46972537571700D249D8 /* Preview Content */,
+			);
+			path = Kovid;
+			sourceTree = "<group>";
+		};
+		639D46972537571700D249D8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				639D46982537571700D249D8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		639D46A6253758B900D249D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				639D46A7253758B900D249D8 /* WidgetKit.framework */,
+				639D46A9253758B900D249D8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		639D46AB253758B900D249D8 /* Kovid Widget */ = {
+			isa = PBXGroup;
+			children = (
+				639D46AC253758B900D249D8 /* Kovid_Widget.swift */,
+				639D46AE253758BA00D249D8 /* Assets.xcassets */,
+				639D46B0253758BA00D249D8 /* Info.plist */,
+			);
+			path = "Kovid Widget";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		639D468D2537571500D249D8 /* Kovid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 639D469D2537571700D249D8 /* Build configuration list for PBXNativeTarget "Kovid" */;
+			buildPhases = (
+				639D468A2537571500D249D8 /* Sources */,
+				639D468B2537571500D249D8 /* Frameworks */,
+				639D468C2537571500D249D8 /* Resources */,
+				639D46B7253758BA00D249D8 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				639D46B2253758BA00D249D8 /* PBXTargetDependency */,
+			);
+			name = Kovid;
+			productName = Kovid;
+			productReference = 639D468E2537571500D249D8 /* Kovid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		639D46A4253758B900D249D8 /* Kovid WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 639D46B4253758BA00D249D8 /* Build configuration list for PBXNativeTarget "Kovid WidgetExtension" */;
+			buildPhases = (
+				639D46A1253758B900D249D8 /* Sources */,
+				639D46A2253758B900D249D8 /* Frameworks */,
+				639D46A3253758B900D249D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kovid WidgetExtension";
+			productName = "Kovid WidgetExtension";
+			productReference = 639D46A5253758B900D249D8 /* Kovid WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		639D46862537571500D249D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					639D468D2537571500D249D8 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					639D46A4253758B900D249D8 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 639D46892537571500D249D8 /* Build configuration list for PBXProject "Kovid" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 639D46852537571500D249D8;
+			productRefGroup = 639D468F2537571500D249D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				639D468D2537571500D249D8 /* Kovid */,
+				639D46A4253758B900D249D8 /* Kovid WidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		639D468C2537571500D249D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639D46992537571700D249D8 /* Preview Assets.xcassets in Resources */,
+				639D46962537571700D249D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639D46A3253758B900D249D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639D46AF253758BA00D249D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		639D468A2537571500D249D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63167F272538B8780011EF77 /* KovidAPI.swift in Sources */,
+				639D46942537571500D249D8 /* ContentView.swift in Sources */,
+				639D46922537571500D249D8 /* KovidApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639D46A1253758B900D249D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63167F2A2538B87C0011EF77 /* KovidAPI.swift in Sources */,
+				639D46AD253758B900D249D8 /* Kovid_Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		639D46B2253758BA00D249D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 639D46A4253758B900D249D8 /* Kovid WidgetExtension */;
+			targetProxy = 639D46B1253758BA00D249D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		639D469B2537571700D249D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		639D469C2537571700D249D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		639D469E2537571700D249D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Kovid/Preview Content\"";
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Kovid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.Kovid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		639D469F2537571700D249D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Kovid/Preview Content\"";
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Kovid/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fassko.Kovid;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		639D46B5253758BA00D249D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				INFOPLIST_FILE = "Kovid Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.Kovid.Kovid-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		639D46B6253758BA00D249D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				INFOPLIST_FILE = "Kovid Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.Kovid.Kovid-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		639D46892537571500D249D8 /* Build configuration list for PBXProject "Kovid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				639D469B2537571700D249D8 /* Debug */,
+				639D469C2537571700D249D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		639D469D2537571700D249D8 /* Build configuration list for PBXNativeTarget "Kovid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				639D469E2537571700D249D8 /* Debug */,
+				639D469F2537571700D249D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		639D46B4253758BA00D249D8 /* Build configuration list for PBXNativeTarget "Kovid WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				639D46B5253758BA00D249D8 /* Debug */,
+				639D46B6253758BA00D249D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 639D46862537571500D249D8 /* Project object */;
+}
