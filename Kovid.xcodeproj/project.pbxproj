@@ -18,6 +18,15 @@
 		639D46AD253758B900D249D8 /* Kovid_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D46AC253758B900D249D8 /* Kovid_Widget.swift */; };
 		639D46AF253758BA00D249D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639D46AE253758BA00D249D8 /* Assets.xcassets */; };
 		639D46B3253758BA00D249D8 /* Kovid WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 639D46A5253758B900D249D8 /* Kovid WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		63F3BE91253A094F001003C3 /* Kovid Apple Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 63F3BE90253A094F001003C3 /* Kovid Apple Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		63F3BE96253A094F001003C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F3BE95253A094F001003C3 /* Assets.xcassets */; };
+		63F3BE9D253A0950001003C3 /* Kovid Apple Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 63F3BE9C253A0950001003C3 /* Kovid Apple Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		63F3BEA2253A0950001003C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F3BEA1253A0950001003C3 /* ContentView.swift */; };
+		63F3BEA4253A0950001003C3 /* KovidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F3BEA3253A0950001003C3 /* KovidApp.swift */; };
+		63F3BEA6253A0950001003C3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F3BEA5253A0950001003C3 /* ComplicationController.swift */; };
+		63F3BEA8253A0950001003C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F3BEA7253A0950001003C3 /* Assets.xcassets */; };
+		63F3BEAB253A0950001003C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F3BEAA253A0950001003C3 /* Preview Assets.xcassets */; };
+		63F3BEBD253A095A001003C3 /* KovidAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63167F262538B8780011EF77 /* KovidAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +36,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 639D46A4253758B900D249D8;
 			remoteInfo = "Kovid WidgetExtension";
+		};
+		63F3BE92253A094F001003C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 639D46862537571500D249D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63F3BE8F253A094F001003C3;
+			remoteInfo = "Kovid Apple Watch WatchKit App";
+		};
+		63F3BE9E253A0950001003C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 639D46862537571500D249D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63F3BE9B253A0950001003C3;
+			remoteInfo = "Kovid Apple Watch WatchKit Extension";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -38,6 +61,28 @@
 			dstSubfolderSpec = 13;
 			files = (
 				639D46B3253758BA00D249D8 /* Kovid WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F3BEAF253A0950001003C3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				63F3BE91253A094F001003C3 /* Kovid Apple Watch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F3BEB2253A0950001003C3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				63F3BE9D253A0950001003C3 /* Kovid Apple Watch WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +103,17 @@
 		639D46AC253758B900D249D8 /* Kovid_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kovid_Widget.swift; sourceTree = "<group>"; };
 		639D46AE253758BA00D249D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		639D46B0253758BA00D249D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63F3BE8D253A094F001003C3 /* Kovid Apple Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kovid Apple Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F3BE90253A094F001003C3 /* Kovid Apple Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kovid Apple Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F3BE95253A094F001003C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63F3BE97253A094F001003C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63F3BE9C253A0950001003C3 /* Kovid Apple Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Kovid Apple Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F3BEA1253A0950001003C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		63F3BEA3253A0950001003C3 /* KovidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KovidApp.swift; sourceTree = "<group>"; };
+		63F3BEA5253A0950001003C3 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		63F3BEA7253A0950001003C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63F3BEAA253A0950001003C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63F3BEAC253A0950001003C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +133,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63F3BE99253A0950001003C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +148,8 @@
 			children = (
 				639D46902537571500D249D8 /* Kovid */,
 				639D46AB253758B900D249D8 /* Kovid Widget */,
+				63F3BE94253A094F001003C3 /* Kovid Apple Watch WatchKit App */,
+				63F3BEA0253A0950001003C3 /* Kovid Apple Watch WatchKit Extension */,
 				639D46A6253758B900D249D8 /* Frameworks */,
 				639D468F2537571500D249D8 /* Products */,
 			);
@@ -95,6 +160,9 @@
 			children = (
 				639D468E2537571500D249D8 /* Kovid.app */,
 				639D46A5253758B900D249D8 /* Kovid WidgetExtension.appex */,
+				63F3BE8D253A094F001003C3 /* Kovid Apple Watch.app */,
+				63F3BE90253A094F001003C3 /* Kovid Apple Watch WatchKit App.app */,
+				63F3BE9C253A0950001003C3 /* Kovid Apple Watch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,6 +207,36 @@
 			path = "Kovid Widget";
 			sourceTree = "<group>";
 		};
+		63F3BE94253A094F001003C3 /* Kovid Apple Watch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				63F3BE95253A094F001003C3 /* Assets.xcassets */,
+				63F3BE97253A094F001003C3 /* Info.plist */,
+			);
+			path = "Kovid Apple Watch WatchKit App";
+			sourceTree = "<group>";
+		};
+		63F3BEA0253A0950001003C3 /* Kovid Apple Watch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				63F3BEA1253A0950001003C3 /* ContentView.swift */,
+				63F3BEA3253A0950001003C3 /* KovidApp.swift */,
+				63F3BEA5253A0950001003C3 /* ComplicationController.swift */,
+				63F3BEA7253A0950001003C3 /* Assets.xcassets */,
+				63F3BEAC253A0950001003C3 /* Info.plist */,
+				63F3BEA9253A0950001003C3 /* Preview Content */,
+			);
+			path = "Kovid Apple Watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		63F3BEA9253A0950001003C3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				63F3BEAA253A0950001003C3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +276,57 @@
 			productReference = 639D46A5253758B900D249D8 /* Kovid WidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		63F3BE8C253A094F001003C3 /* Kovid Apple Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F3BEB7253A0950001003C3 /* Build configuration list for PBXNativeTarget "Kovid Apple Watch" */;
+			buildPhases = (
+				63F3BE8B253A094F001003C3 /* Resources */,
+				63F3BEAF253A0950001003C3 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63F3BE93253A094F001003C3 /* PBXTargetDependency */,
+			);
+			name = "Kovid Apple Watch";
+			productName = "Kovid Apple Watch";
+			productReference = 63F3BE8D253A094F001003C3 /* Kovid Apple Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		63F3BE8F253A094F001003C3 /* Kovid Apple Watch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F3BEB6253A0950001003C3 /* Build configuration list for PBXNativeTarget "Kovid Apple Watch WatchKit App" */;
+			buildPhases = (
+				63F3BE8E253A094F001003C3 /* Resources */,
+				63F3BEB2253A0950001003C3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63F3BE9F253A0950001003C3 /* PBXTargetDependency */,
+			);
+			name = "Kovid Apple Watch WatchKit App";
+			productName = "Kovid Apple Watch WatchKit App";
+			productReference = 63F3BE90253A094F001003C3 /* Kovid Apple Watch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		63F3BE9B253A0950001003C3 /* Kovid Apple Watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F3BEB5253A0950001003C3 /* Build configuration list for PBXNativeTarget "Kovid Apple Watch WatchKit Extension" */;
+			buildPhases = (
+				63F3BE98253A0950001003C3 /* Sources */,
+				63F3BE99253A0950001003C3 /* Frameworks */,
+				63F3BE9A253A0950001003C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kovid Apple Watch WatchKit Extension";
+			productName = "Kovid Apple Watch WatchKit Extension";
+			productReference = 63F3BE9C253A0950001003C3 /* Kovid Apple Watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,6 +340,15 @@
 						CreatedOnToolsVersion = 12.0.1;
 					};
 					639D46A4253758B900D249D8 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					63F3BE8C253A094F001003C3 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					63F3BE8F253A094F001003C3 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					63F3BE9B253A0950001003C3 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
 				};
@@ -210,6 +368,9 @@
 			targets = (
 				639D468D2537571500D249D8 /* Kovid */,
 				639D46A4253758B900D249D8 /* Kovid WidgetExtension */,
+				63F3BE8C253A094F001003C3 /* Kovid Apple Watch */,
+				63F3BE8F253A094F001003C3 /* Kovid Apple Watch WatchKit App */,
+				63F3BE9B253A0950001003C3 /* Kovid Apple Watch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +390,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				639D46AF253758BA00D249D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F3BE8B253A094F001003C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F3BE8E253A094F001003C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F3BE96253A094F001003C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63F3BE9A253A0950001003C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F3BEAB253A0950001003C3 /* Preview Assets.xcassets in Resources */,
+				63F3BEA8253A0950001003C3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +439,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63F3BE98253A0950001003C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F3BEBD253A095A001003C3 /* KovidAPI.swift in Sources */,
+				63F3BEA2253A0950001003C3 /* ContentView.swift in Sources */,
+				63F3BEA4253A0950001003C3 /* KovidApp.swift in Sources */,
+				63F3BEA6253A0950001003C3 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -261,6 +457,16 @@
 			isa = PBXTargetDependency;
 			target = 639D46A4253758B900D249D8 /* Kovid WidgetExtension */;
 			targetProxy = 639D46B1253758BA00D249D8 /* PBXContainerItemProxy */;
+		};
+		63F3BE93253A094F001003C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63F3BE8F253A094F001003C3 /* Kovid Apple Watch WatchKit App */;
+			targetProxy = 63F3BE92253A094F001003C3 /* PBXContainerItemProxy */;
+		};
+		63F3BE9F253A0950001003C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63F3BE9B253A0950001003C3 /* Kovid Apple Watch WatchKit Extension */;
+			targetProxy = 63F3BE9E253A0950001003C3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -469,6 +675,120 @@
 			};
 			name = Release;
 		};
+		63F3BEAD253A0950001003C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.Kovid-Apple-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		63F3BEAE253A0950001003C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.Kovid-Apple-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		63F3BEB0253A0950001003C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				IBSC_MODULE = Kovid_Apple_Watch_WatchKit_Extension;
+				INFOPLIST_FILE = "Kovid Apple Watch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.Kovid-Apple-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		63F3BEB1253A0950001003C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				IBSC_MODULE = Kovid_Apple_Watch_WatchKit_Extension;
+				INFOPLIST_FILE = "Kovid Apple Watch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.Kovid-Apple-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		63F3BEB3253A0950001003C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Kovid Apple Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Kovid Apple Watch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.Kovid-Apple-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		63F3BEB4253A0950001003C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Kovid Apple Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 3SGNZQGS68;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Kovid Apple Watch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fassko.Kovid-Apple-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -495,6 +815,33 @@
 			buildConfigurations = (
 				639D46B5253758BA00D249D8 /* Debug */,
 				639D46B6253758BA00D249D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63F3BEB5253A0950001003C3 /* Build configuration list for PBXNativeTarget "Kovid Apple Watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F3BEB3253A0950001003C3 /* Debug */,
+				63F3BEB4253A0950001003C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63F3BEB6253A0950001003C3 /* Build configuration list for PBXNativeTarget "Kovid Apple Watch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F3BEB0253A0950001003C3 /* Debug */,
+				63F3BEB1253A0950001003C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63F3BEB7253A0950001003C3 /* Build configuration list for PBXNativeTarget "Kovid Apple Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F3BEAD253A0950001003C3 /* Debug */,
+				63F3BEAE253A0950001003C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

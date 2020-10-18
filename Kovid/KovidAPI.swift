@@ -7,12 +7,24 @@
 
 import Foundation
 
+extension Double {
+    /// Rounds the double to decimal places value
+    func rounded(toPlaces places:Int) -> Double {
+        let divisor = pow(10.0, Double(places))
+        return (self * divisor).rounded() / divisor
+    }
+}
+
 struct KovidData: Decodable {
   let testsCount: Int
   let infectedCount: Int
   let deathCount: Int
   let recoveredCount: Int
   let updatedDate: Date
+  
+  var percentage: Double {
+    Double(Double(infectedCount) / Double(testsCount)).rounded(toPlaces: 5)
+  }
   
   var updatedDateString: String {
     let formatter = DateFormatter()
