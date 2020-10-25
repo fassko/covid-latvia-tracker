@@ -46,59 +46,62 @@ struct ContentView: View {
   @ObservedObject var viewModel = ViewModel()
   
   var body: some View {
-    NavigationView {
-      VStack {
-        LazyVGrid(columns: [.init(), .init()]) {
-          GroupBox(label: Label("Cases", systemImage: "square.and.pencil"), content: {
-            Text(viewModel.kovidData.infectedCount.description)
-          })
-          .groupBoxStyle(PlainGroupBoxStyle())
-          .foregroundColor(.orange)
-          
-          GroupBox(label: Label("Deaths", systemImage: "cross.circle.fill"), content: {
-            Text(viewModel.kovidData.deathCount.description)
-          })
-          .groupBoxStyle(PlainGroupBoxStyle())
-          .foregroundColor(.red)
-          
-          GroupBox(label: Label("Tested", systemImage: "person.fill.questionmark"), content: {
-            Text(viewModel.kovidData.testsCount.description)
-          })
-          .groupBoxStyle(PlainGroupBoxStyle())
-          
-          GroupBox(label: Label("Recovered", systemImage: "person.fill.checkmark"), content: {
-            Text(viewModel.kovidData.recoveredCount.description)
-          })
-          .groupBoxStyle(PlainGroupBoxStyle())
-          .foregroundColor(.green)
-          
-          GroupBox(label: Label("Percentage", systemImage: "percent"), content: {
-            Text(viewModel.kovidData.percentage.description)
-          })
-          .groupBoxStyle(PlainGroupBoxStyle())
-          .foregroundColor(.orange)
-          
-          GroupBox(label: Label("Updated", systemImage: "calendar"), content: {
-            Text(viewModel.kovidData.updatedDateString)
-          })
-          .groupBoxStyle(PlainGroupBoxStyle())
-          .foregroundColor(.green)
-        }.padding()
-        
+    VStack {
+      HStack {
         Spacer()
-      }.onAppear(perform: {
-        viewModel.fetchData()
-      })
-      .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
-        viewModel.fetchData()
+        
+        Button(action: {
+          viewModel.fetchData()
+        }, label: {
+          Label("Refresh", systemImage: "arrow.clockwise")
+        })
       }
-      .navigationBarItems(trailing:
-                            Button(action: {
-                              viewModel.fetchData()
-                            }, label: {
-                              Label("Refresh", systemImage: "arrow.clockwise")
-                            })
-      )
+      .padding()
+      
+      LazyVGrid(columns: [.init(), .init()]) {
+        GroupBox(label: Label("Cases", systemImage: "square.and.pencil"), content: {
+          Text(viewModel.kovidData.infectedCount.description)
+        })
+        .groupBoxStyle(PlainGroupBoxStyle())
+        .foregroundColor(.orange)
+        
+        GroupBox(label: Label("Deaths", systemImage: "cross.circle.fill"), content: {
+          Text(viewModel.kovidData.deathCount.description)
+        })
+        .groupBoxStyle(PlainGroupBoxStyle())
+        .foregroundColor(.red)
+        
+        GroupBox(label: Label("Tested", systemImage: "person.fill.questionmark"), content: {
+          Text(viewModel.kovidData.testsCount.description)
+        })
+        .groupBoxStyle(PlainGroupBoxStyle())
+        
+        GroupBox(label: Label("Recovered", systemImage: "person.fill.checkmark"), content: {
+          Text(viewModel.kovidData.recoveredCount.description)
+        })
+        .groupBoxStyle(PlainGroupBoxStyle())
+        .foregroundColor(.green)
+        
+        GroupBox(label: Label("Percentage", systemImage: "percent"), content: {
+          Text(viewModel.kovidData.percentage.description)
+        })
+        .groupBoxStyle(PlainGroupBoxStyle())
+        .foregroundColor(.orange)
+        
+        GroupBox(label: Label("Updated", systemImage: "calendar"), content: {
+          Text(viewModel.kovidData.updatedDateString)
+        })
+        .groupBoxStyle(PlainGroupBoxStyle())
+        .foregroundColor(.green)
+      }.padding()
+      
+      Spacer()
+      
+    }.onAppear(perform: {
+      viewModel.fetchData()
+    })
+    .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+      viewModel.fetchData()
     }
   }
 }
