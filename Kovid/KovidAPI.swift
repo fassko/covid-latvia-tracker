@@ -23,7 +23,7 @@ struct KovidData: Decodable {
   let updatedDate: Date
   
   var percentage: Double {
-    Double(Double(infectedCount) / Double(testsCount)).rounded(toPlaces: 5)
+    (Double((Double(infectedCount) / Double(testsCount)) * 100 ).rounded(toPlaces: 5))
   }
   
   var updatedDateString: String {
@@ -55,15 +55,15 @@ struct KovidData: Decodable {
   static var example: KovidData {
     let data = """
       {
-        "total_tests_count": 378190,
-        "total_infected_count": 3056,
-        "total_death_count": 41,
-        "total_recovered_count": 1329,
-        "infected_tests_proportion": 0.81,
-        "yesterday_tests_count": 4667,
-        "yesterday_infected_count": 114,
+        "total_tests_count": 0,
+        "total_infected_count": 0,
+        "total_death_count": 0,
+        "total_recovered_count": 0,
+        "infected_tests_proportion": 0,
+        "yesterday_tests_count": 0,
+        "yesterday_infected_count": 0,
         "yesterday_death_count": 0,
-        "yesterday_recovered_count": 4,
+        "yesterday_recovered_count": 0,
         "updated_at": "2020-10-15"
       }
     """.data(using: .utf8)!

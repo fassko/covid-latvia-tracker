@@ -1,0 +1,10 @@
+git_url("https://bitbucket.org/fassko/certificates/")
+
+storage_mode("git")
+
+type("development")
+
+app_identifier [
+  "com.fassko.kovid",
+  "com.fassko.kovid.kovid-widget"
+]

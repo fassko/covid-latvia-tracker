@@ -59,63 +59,24 @@ struct Kovid_WidgetEntryView : View {
       Spacer()
       
       VStack(alignment: .center, spacing: 10) {
-        
-        GroupBox(label: Label("Cases", systemImage: "square.and.pencil"), content: {
-          Text(entry.kovidData.infectedCount.description)
-            
-        })
+        GroupBox(label: Label("Cases", systemImage: "square.and.pencil")) {
+            Text(entry.kovidData.infectedCount.description)
+        }
         .groupBoxStyle(PlainGroupBoxStyle())
         .foregroundColor(.orange)
         
-        GroupBox(label: Label("Deaths", systemImage: "cross.circle.fill"), content: {
+        GroupBox(label: Label("Deaths", systemImage: "cross.circle.fill")) {
           Text(entry.kovidData.deathCount.description)
-        })
+        }
         .groupBoxStyle(PlainGroupBoxStyle())
         .foregroundColor(.red)
-        //
-        //        Label("Cases:" + entry.kovidData.infectedCount.description, systemImage: "square.and.pencil")
-        //
-        //        HStack {
-        //          Text("Cases:")
-        //            .font(.body)
-        //          Text(entry.kovidData.infectedCount.description)
-        //            .font(.headline)
-        //            .foregroundColor(.orange)
-        //        }
-        //
-        //        HStack {
-        //          Text("Deaths:")
-        //            .font(.body)
-        //          Text(entry.kovidData.deathCount.description)
-        //            .font(.headline)
-        //            .foregroundColor(.red)
-        //        }
-        //
-        //        HStack {
-        //          Text("Tested:")
-        //            .font(.body)
-        //          Text(entry.kovidData.testsCount.description)
-        //            .font(.headline)
-        //        }
-        //
-        //        HStack {
-        //          Text("Recovered:")
-        //            .font(.body)
-        //          Text(entry.kovidData.recoveredCount.description)
-        //            .font(.headline)
-        //            .foregroundColor(.green)
-        //        }
         
         Text(entry.kovidData.updatedDateString)
           .font(.caption2)
       }
       .padding()
       
-            Spacer()
-      
-//          Text(entry.kovidData.updatedDateString)
-//              .font(.subheadline)
-      
+      Spacer()
     }
   }
 }
@@ -145,17 +106,17 @@ struct Kovid_Widget_Previews: PreviewProvider {
         .previewContext(WidgetPreviewContext(family: .systemMedium))
         .previewDevice("iPhone 11 Pro")
       
-//      Kovid_WidgetEntryView(entry: KovidEntry(date: Date(), kovidData: KovidData.example))
-//        .previewContext(WidgetPreviewContext(family: .systemSmall))
-//        .previewDevice("iPhone 11 Pro")
-//        .preferredColorScheme(.dark)
-//        .environment(\.colorScheme, .dark)
-//      
-//      Kovid_WidgetEntryView(entry: KovidEntry(date: Date(), kovidData: KovidData.example))
-//        .previewContext(WidgetPreviewContext(family: .systemMedium))
-//        .previewDevice("iPhone 11 Pro")
-//        .preferredColorScheme(.dark)
-//        .environment(\.colorScheme, .dark)
+      Kovid_WidgetEntryView(entry: KovidEntry(date: Date(), kovidData: KovidData.example))
+        .previewContext(WidgetPreviewContext(family: .systemSmall))
+        .previewDevice("iPhone 11 Pro")
+        .preferredColorScheme(.dark)
+        .environment(\.colorScheme, .dark)
+
+      Kovid_WidgetEntryView(entry: KovidEntry(date: Date(), kovidData: KovidData.example))
+        .previewContext(WidgetPreviewContext(family: .systemMedium))
+        .previewDevice("iPhone 11 Pro")
+        .preferredColorScheme(.dark)
+        .environment(\.colorScheme, .dark)
     }
   }
 }
