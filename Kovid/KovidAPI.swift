@@ -15,8 +15,7 @@ struct KovidData: Decodable {
   let updatedDate: Date
   
   var percentage: Double {
-    (Double((Double(infectedCount) / Double(testsCount)) * 100 )
-      .rounded(toPlaces: 5))
+    (Double((Double(infectedCount) / Double(testsCount)) * 100 ).rounded(toPlaces: 5))
   }
   
   var updatedDateString: String {
