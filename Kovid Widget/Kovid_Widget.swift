@@ -22,7 +22,8 @@ struct Provider: TimelineProvider {
     let currentDate = Date()
     let refreshDate = Calendar.current.date(byAdding: .minute, value: 5, to: currentDate)!
     
-    KovidAPI().getYesterdayData { kovidData in
+    Task {
+      let kovidData = try await KovidAPI().getData()
       let entry = KovidEntry(date: currentDate, kovidData: kovidData)
       let timeline = Timeline(entries: [entry], policy: .after(refreshDate))
       completion(timeline)

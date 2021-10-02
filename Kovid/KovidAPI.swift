@@ -7,14 +7,6 @@
 
 import Foundation
 
-extension Double {
-    /// Rounds the double to decimal places value
-    func rounded(toPlaces places:Int) -> Double {
-        let divisor = pow(10.0, Double(places))
-        return (self * divisor).rounded() / divisor
-    }
-}
-
 struct KovidData: Decodable {
   let testsCount: Int
   let infectedCount: Int
@@ -23,7 +15,8 @@ struct KovidData: Decodable {
   let updatedDate: Date
   
   var percentage: Double {
-    (Double((Double(infectedCount) / Double(testsCount)) * 100 ).rounded(toPlaces: 5))
+    (Double((Double(infectedCount) / Double(testsCount)) * 100 )
+      .rounded(toPlaces: 5))
   }
   
   var updatedDateString: String {
@@ -86,7 +79,7 @@ extension DateFormatter {
 import Combine
 
 struct KovidAPI {
-  func getYesterdayData(_ completion: @escaping (KovidData) -> ()) {
+  func getData() async throws -> KovidData {
     let url = URL(string: "https://apturicovid-files.spkc.gov.lv/stats/v1/covid-stats.json")!
     
     let config = URLSessionConfiguration.ephemeral
@@ -94,15 +87,9 @@ struct KovidAPI {
     config.urlCache = nil
     let session = URLSession(configuration: config)
     
-    session.dataTask(with: url) { data, response, error in
-      if let data = data {
-        let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .formatted(.customKovid)
-        let kovidData = try! decoder.decode(KovidData.self, from: data)
-        DispatchQueue.main.async {
-          completion(kovidData)
-        }
-      }
-    }.resume()
+    let (data, _) = try await session.data(from: url)
+    let decoder = JSONDecoder()
+    decoder.dateDecodingStrategy = .formatted(.customKovid)
+    return try decoder.decode(KovidData.self, from: data)
   }
 }
