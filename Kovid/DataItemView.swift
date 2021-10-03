@@ -7,11 +7,21 @@
 
 import SwiftUI
 
+extension View {
+  @ViewBuilder func `if`<Content: View>(_ condition: @autoclosure () -> Bool, transform: (Self) -> Content) -> some View {
+    if condition() {
+      transform(self)
+    } else {
+      self
+    }
+  }
+}
+
 struct DataItemView: View {
   let text: String
   let label: String
   let systemImage: String
-  var foregroundColor: Color = .black
+  var foregroundColor: Color?
   
   var body: some View {
     GroupBox {
@@ -20,12 +30,21 @@ struct DataItemView: View {
       Label(label, systemImage: systemImage)
     }
     .groupBoxStyle(PlainGroupBoxStyle())
-    .foregroundColor(foregroundColor)
+    .if(foregroundColor != nil) { view in
+      view.foregroundColor(foregroundColor!)
+    }
   }
 }
 
 struct DataItemView_Previews: PreviewProvider {
   static var previews: some View {
-    DataItemView(text: "15%", label: "Percentage", systemImage: "square.and.pencil", foregroundColor: .orange)
+    Group {
+      DataItemView(text: "15%", label: "Percentage", systemImage: "square.and.pencil", foregroundColor: .orange)
+      
+      DataItemView(text: "15%", label: "Percentage", systemImage: "square.and.pencil")
+      
+      DataItemView(text: "15%", label: "Percentage", systemImage: "square.and.pencil")
+        .preferredColorScheme(.dark)
+    }
   }
 }

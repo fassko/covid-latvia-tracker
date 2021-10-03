@@ -20,6 +20,7 @@
 		639D46AD253758B900D249D8 /* Kovid_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D46AC253758B900D249D8 /* Kovid_Widget.swift */; };
 		639D46AF253758BA00D249D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639D46AE253758BA00D249D8 /* Assets.xcassets */; };
 		639D46B3253758BA00D249D8 /* Kovid WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 639D46A5253758B900D249D8 /* Kovid WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		63A2C6A82708C23100518354 /* Extensions+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362D3062708BC7700D9EE81 /* Extensions+Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -301,6 +302,7 @@
 			files = (
 				63167F2A2538B87C0011EF77 /* KovidAPI.swift in Sources */,
 				639D46AD253758B900D249D8 /* Kovid_Widget.swift in Sources */,
+				63A2C6A82708C23100518354 /* Extensions+Double.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +351,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 19;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -412,7 +414,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 17;
+				CURRENT_PROJECT_VERSION = 19;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;

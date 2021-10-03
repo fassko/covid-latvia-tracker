@@ -93,6 +93,7 @@ struct ContentView: View {
         Label("Refresh", systemImage: "arrow.clockwise")
       }))
     }
+    .navigationViewStyle(StackNavigationViewStyle())
     .onAppear(perform: viewModel.fetchData)
     .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
       viewModel.fetchData()

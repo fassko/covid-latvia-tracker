@@ -47,15 +47,15 @@ struct KovidData: Decodable {
   static var example: KovidData {
     let data = """
       {
-        "total_tests_count": 0,
-        "total_infected_count": 0,
-        "total_death_count": 0,
-        "total_recovered_count": 0,
-        "infected_tests_proportion": 0,
-        "yesterday_tests_count": 0,
-        "yesterday_infected_count": 0,
-        "yesterday_death_count": 0,
-        "yesterday_recovered_count": 0,
+        "total_tests_count": 100,
+        "total_infected_count": 2,
+        "total_death_count": 3,
+        "total_recovered_count": 500,
+        "infected_tests_proportion": 20,
+        "yesterday_tests_count": 500,
+        "yesterday_infected_count": 2,
+        "yesterday_death_count": 5,
+        "yesterday_recovered_count": 5,
         "updated_at": "2020-10-15"
       }
     """.data(using: .utf8)!
